@@ -2,7 +2,7 @@ from django.db import models
 from django.db.models import Model
 
 
-class Posts(Model):
+class Post(Model):
     text = models.TextField()
 
     def __str__(self):
