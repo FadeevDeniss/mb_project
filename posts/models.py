@@ -1,3 +1,9 @@
 from django.db import models
+from django.db.models import Model
 
-# Create your models here.
+
+class Posts(Model):
+    text = models.TextField()
+
+    def __str__(self):
+        return f"Post model: {self.text[:50]}"
